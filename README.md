@@ -99,7 +99,7 @@ Slices:
 - masterJobTypes
 - masterInventoryTypes
 - masterJobsList
-- masterLaneTypes (stretch)
+- masterLaneList
 - sideBarOpen (bool)(strech)
 - selectedLane
 - selectedJobType
@@ -150,6 +150,12 @@ state = {
       startDate: newDate,
       dueDate: dueDate,
       specialInstructions: "make sure this job is done first"
+    }
+  }
+  masterLaneList: {
+    nameOfLane: {
+      name: nameOfLane,
+      details: string,
     }
   }
   selectedLane: keyOfLane,
